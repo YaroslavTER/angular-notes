@@ -1,0 +1,24 @@
+
+    view encapsulation
+
+        ShadowDom
+
+            uses the browser's native shadow DOM implementation to attach a shadow
+            DOM to the component's host element, and then puts the component view
+            inside that shadow DOM. The components styles are included within the
+            shadow DOM
+
+        Native
+
+            uses a now deprecated version of the browser's native shadow DOM
+            implementation
+
+        Emulated (default)
+
+            emulates the behavior of shadow DOM by preprocessing and renaming the
+            CSS code to effectively scope the CSS to the component's view 
+
+        None
+
+            does no view encapsulation. Angular adds the CSS to the global styles.
+            The scoping rules, isolations, and protections don't apply

@@ -1,0 +1,85 @@
+
+    lifecycle hooks
+
+        after application instantiates a component or directiv by calling its
+        constructor, Angular calls the hook methods
+
+        ngOnChanges
+
+            called whenever one or more data-bound input properties change
+
+        ngOnInit
+
+            called once, after the first `ngOnChanges`
+
+
+        ngDoCheck
+
+            called when starts change detection process. Allows to interact
+            with the change detection process
+
+            detect and act upon changes that Angular can't or won't detect
+            on its own
+
+            called after `ngOnChanges` on every change detection run, and after
+            `ngOnInit` on the first run
+
+
+        ngAfterContentInit
+
+            called when component recieves data
+
+            called after Angular projects external content into the component's
+            view, or into the view that a directive is in
+
+            called once after `ngDoCheck`
+
+        ngAfterContentChecked
+
+            after change detection finished
+
+            called after Angular checks the content projected into the directive
+            or component
+
+            called after `ngAfterContentInit` an every susequent `ngDoCheck`
+        
+        ngAfterViewInit
+
+            means that view is ready and Angular can work with it
+
+            called after Angular initializes the component's views and child
+            views, or the view that contains the directive
+
+            called once after the first `ngAfterContentChecked`
+
+        ngAfterViewChecked
+
+            when everything is ready to work with the view
+    
+            called after Angaulr checks the component's views and child views, or 
+            the view that contains the directive
+
+            called after the `ngAfterViewInit` and every subsequent `ngAfterContentChecked`
+
+        
+        ngOnDestroy
+
+            called before Angular destroys the directive or component
+
+        
+        hooks for
+
+            directives
+
+                ngOnChanges
+
+                ngOnInit
+
+                ngDoCkeck
+
+                ngOnDestroy
+
+            components
+
+                all
+            

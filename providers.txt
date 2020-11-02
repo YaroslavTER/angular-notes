@@ -1,0 +1,23 @@
+
+    providers
+        
+        useClass
+
+            creates new instance
+
+        useExisting
+
+            references
+
+        useValue
+
+            lets you associate a fixed value with a DI token
+
+        useFactory
+
+            the provider is factory function
+
+        deps
+    
+            the injector resolves these tokens and injects the corresponding
+            services into the matching factory function parameters
